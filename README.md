@@ -26,6 +26,7 @@ A modern web application to explore, manage, and save recipes. Built with React,
     Clone the repo
 
 git clone git@github.com:David-Malobani/Anyfood-Project-SemesterA.git
+
 cd recipes
 
     Install dependencies
