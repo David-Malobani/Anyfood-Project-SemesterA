@@ -1,0 +1,718 @@
+* {
+     padding: 0;
+     margin: 0;
+     font-family: Sans-serif;
+
+}
+
+
+
+/* ------------------------ Header ------------------------  */
+.header {
+     width: 100vw;
+     background-image: url(https://ediblephoenix.ediblecommunities.com/sites/default/files/images/article/step-away-from-1.jpg);
+     background-size: cover;
+     background-position: top;
+     height: 150px;
+     font-family: Playwrite Australia SA;
+     display: flex;
+     justify-content: space-between;
+}
+
+.header h1 {
+     text-align: center;
+     color: rgb(212, 212, 212);
+     text-shadow: 2px 2px rgb(0, 0, 0);
+     padding-top: 20px;
+     font-family: "DM Serif Text", serif;
+     font-weight: 800;
+     font-style: italic;
+     font-size: 52px;
+     width: 30px;
+}
+
+.header .user-logout {
+     width: 250px;
+}
+
+.header .user-logout p {
+     color: rgb(255, 255, 255);
+     text-shadow: 0.7px 0.7px rgb(0, 0, 0);
+     font-size: 24px;
+     font-family: "DM Serif Text", serif;
+
+}
+
+.header .logout button {
+     font-size: 18px;
+     padding: 10px;
+     background-color: rgb(86, 65, 65);
+     color: rgb(232, 231, 231);
+     border-radius: 14px;
+     transition: background-color 0.3s ease;
+}
+
+.header .logout button:hover {
+     background-color: rgb(93, 82, 82);
+}
+
+@media (max-width: 600px) {
+     .header {
+          height: 100px;
+          display: flex;
+          justify-content: space-between;
+          width: 100vw;
+     }
+
+     .header h1 {
+          font-size: 30px;
+          width: 30px;
+     }
+
+     .header .logout button {
+          width: 75px;
+          height: 40px;
+          font-size: 10px;
+     }
+
+     .header .user-logout p {
+          font-size: 14px;
+     }
+
+     .bdika1 {
+          width: 100px;
+
+     }
+
+     .bdika2 {
+          width: 100px;
+     }
+
+     .bdika3 {
+          width: 100px;
+     }
+
+     .header .user-logout {
+          width: 100px;
+     }
+}
+
+/* ------------------------ Nav Bar  ------------------------  */
+.nav .title{
+     background-color: red;
+}
+.nav-bar {
+     background-color: rgb(173, 146, 128);
+     list-style: none;
+     text-align: center;
+     border: solid 2px black;
+}
+
+.nav-bar a {
+     color: black;
+     
+     
+}
+.nav-bar li{
+     margin: 50px;
+     font-size: 23px;
+     
+}
+
+.menu-icon {
+     margin: 30px;
+     font-weight: bold;
+     color: black;
+     cursor: pointer;
+     transition: transform 0.3s ease;
+     width: 33px;
+}
+
+.menu-icon:hover {
+     transform: scale(1.17);
+}
+
+/* ------------------------ Authentication Style ------------------------  */
+.background-aut {
+     width: 100vw;
+     height: 100vh;
+     position: absolute;
+     background-image: url(https://cdn.georgeinstitute.org/sites/default/files/2020-10/world-food-day-2020.png);
+     background-size: cover;
+     background-repeat: no-repeat;
+     z-index: -1;
+     filter: blur(3px);
+     overflow-x: hidden;
+}
+
+.container-sign {
+     position: relative;
+     background-color: rgba(210, 211, 211, 0.836);
+     width: 450px;
+     top: 30vh;
+     padding: 15px;
+     margin: 0 auto;
+     text-align: center;
+     border-radius: 15px;
+}
+
+.container-sign h2 {
+     font-weight: bold;
+}
+
+.sign-inputs {
+     list-style: none;
+}
+
+.sign-inputs input {
+     width: 290px;
+     text-align: center;
+     border-radius: 9px;
+     border: none;
+     background-color: rgba(255, 255, 255, 0.781);
+     margin-bottom: 15px;
+}
+
+.sign-inputs button {
+     width: 290px;
+     border-radius: 9px;
+     border: none;
+     cursor: pointer;
+     transition: background-color 0.3 ease;
+     background-color: rgb(209, 167, 139);
+     margin-bottom: 15px;
+
+}
+
+.sign-inputs button:hover {
+     background-color: rgb(173, 146, 128);
+}
+
+
+
+@media (max-width: 600px) {
+     .background-aut {
+          -webkit-transform: rotate(0deg);
+          -moz-transform: rotate(0deg);
+          background-repeat: no-repeat;
+          background-position: center;
+     }
+
+     .container-sign {
+          width: 300px;
+     }
+
+     .sign-inputs input {
+          width: 220px;
+
+     }
+
+     .sign-inputs button {
+          width: 220px;
+     }
+
+     .sign-link {
+          font-size: 13px;
+     }
+
+
+}
+
+/* ------------------------ ApiRecipes Page ------------------------*/
+
+.ApiRecipes {
+     overflow-x: hidden;
+     background: #ffffff;
+}
+
+
+.searchInput {
+     text-align: center;
+     margin: 10px auto;
+     padding: 5px;
+}
+
+.searchInput input {
+     background-color: rgb(219, 219, 219);
+     width: 350px;
+     height: 38px;
+     font-size: 19px;
+     text-align: center;
+     border-radius: 7px;
+     border: solid 1px black;
+}
+
+.ApiRecipes .cardd {
+     text-align: center;
+     border: 1px solid rgb(3, 3, 3);
+     margin: 10px;
+     width: 250px;
+     height: 310px;
+     background: rgb(110, 66, 24);
+     background: linear-gradient(270deg, rgb(133, 81, 32) 0%, rgba(134, 90, 49, 1) 5%, rgba(204, 134, 68, 1) 50%, rgba(134, 90, 49, 1) 95%,  rgb(133, 81, 32) 100%);
+     border-radius: 40px;
+     padding-bottom: 20px;
+     color: rgb(5, 5, 5);
+     text-decoration: none;
+     transition: transform 0.3s ease;
+     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.473),
+          0 1px 3px rgba(0, 0, 0, 0.493);
+     transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+.ApiRecipes .cardd img {
+     border-radius: 40px 40px 0 0;
+     width: 100%;
+
+}
+.ApiRecipes .cardd h6 {
+     margin-top: 10px;
+     color: rgb(255, 255, 255);
+     font-weight: bold;
+     text-shadow: 2px 2px black;
+}
+
+.ApiRecipes .cardd:hover {
+     transform: scale(1.04);
+}
+@media (max-width: 600px) {
+     .ApiRecipes .cardd {
+          width: 170px;
+          height: 240px;
+     }
+     .searchInput input{
+          width: 130px;
+          font-size: 12px;
+          height: 30px;
+          
+     }
+     .searchInput{
+          margin-bottom: 10px;
+     }
+}
+/* ------------------------ My & Users Recipes page ------------------------*/
+
+.my-recipes {
+     overflow-x: hidden;
+     background: #ffffff;
+}
+
+.title-backg {
+     background: rgb(110, 66, 24);
+     background: linear-gradient(270deg, rgba(110, 66, 24, 1) 0%, rgba(134, 90, 49, 1) 5%, rgba(204, 134, 68, 1) 50%, rgba(134, 90, 49, 1) 95%, rgba(110, 66, 24, 1) 100%);
+     border-radius: 20px;
+     margin: 20px auto;
+     width: 650px;
+     border: solid 2px black;
+}
+
+.recipes-title {
+     text-align: center;
+     margin: 15px auto;
+     border-radius: 10px;
+
+}
+
+.title-backg img {
+     width: 65px;
+}
+
+.recipes-title h2 {
+     font-size: 32px;
+     color: #ffffff;
+     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+     font-family: Playwrite Australia SA;
+     font-weight: bolder;
+}
+.my-recipes .create-button {
+     
+     margin: 20px auto;
+}
+.my-recipes .create-button a {
+     margin: 0 auto;
+     padding: 10px;
+     font-size: 16px;
+     text-decoration: none;
+     font-weight: bold;
+     display: inline-block;
+     border-radius: 10px;
+     color: #ffffff;
+     background-color: #2e2e2e;
+     transition: background-color 0.3s ease;
+     width: 100%;
+     text-align: center;
+}
+.my-recipes .create-button a:hover{
+     background-color: #555555;
+}
+.rec-title-img1 {
+     transform: rotate(-14deg);
+     margin-top: 16px;
+}
+
+.rec-title-img2 {
+     transform: rotate(14deg);
+     margin-top: 16px;
+}
+
+.my-recipes .cardd {
+     text-align: center;
+     border: 1px solid rgb(3, 3, 3);
+     margin: 10px;
+     width: 250px;
+     height: 310px;
+     background: rgb(110, 66, 24);
+     background: linear-gradient(270deg, rgb(133, 81, 32) 0%, rgba(134, 90, 49, 1) 5%, rgba(204, 134, 68, 1) 50%, rgba(134, 90, 49, 1) 95%,  rgb(133, 81, 32) 100%);
+     border-radius: 40px;
+     padding-bottom: 20px;
+     color: rgb(5, 5, 5);
+     text-decoration: none;
+     transition: transform 0.3s ease;
+     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.473),
+          0 1px 3px rgba(0, 0, 0, 0.493);
+     transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.my-recipes .cardd img {
+     border-radius: 40px 40px 0 0;
+     width: 100%;
+     object-fit: cover;
+     height: 250px;
+}
+
+.my-recipes .cardd h6 {
+     font-size: 18px;
+     margin-top: 10px;
+     color: rgb(255, 255, 255);
+     font-weight: bold;
+     text-shadow: 1.5px 1px rgba(0, 0, 0, 0.979);
+}
+
+.my-recipes .cardd:hover {
+     transform: scale(1.04);
+     box-shadow: 0 10px 15px rgba(255, 255, 255, 0.15),
+          0 4px 6px rgba(255, 255, 255, 0.1);
+
+}
+
+@media (max-width: 600px) {
+     .ApiRecipes .cardd {
+          width: 170px;
+          height: 240px;
+     }
+     .title-backg {
+          width: 330px;
+          height: 115px;
+     }
+     .title-backg img {
+          width: 47px;
+     }
+     .recipes-title h2{
+          font-size: 27px;
+     }
+     .my-recipes .create-button {
+          margin: 0 auto;
+     }
+     
+     .my-recipes .create-button a {
+          padding: 8px;
+          font-size: 12px;
+          text-decoration: none;
+          font-weight: bold;
+          display: inline-block;
+          border-radius: 10px;
+          color: #ffffff;
+          background-color: #2e2e2e;
+          transition: background-color 0.3s ease;
+          width: 100%;
+          text-align: center;
+     }
+}
+
+/* ------------------------ Recipes Info ------------------------*/
+.info {
+     overflow-x: hidden;
+     background: #d0ae8d;
+     min-height: 100vh;
+}
+
+.info .info-container {
+     overflow: hidden;
+     background-color: #ffffff;
+     border: 1px solid #ddd;
+     border-radius: 10px;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+     padding: 20px;
+     width: 80%;
+     margin: 20px auto;
+ }
+.info .info-container img {
+     width: 300px;
+     margin-right: 30px;
+     border: solid 2px black;
+     border-radius: 20px;
+}
+
+.info .info-container h2 {
+     font-weight: bold;
+     border-bottom: solid 2px black;
+}
+
+.go-back-button {
+     text-align: center;
+     margin: auto;
+     margin-bottom: 20px;
+     background-color: #B2753B;
+     border: solid 1px black;
+     border-radius: 13px;
+     width: 120px;
+     transition: background-color 0.3s ease;
+}
+
+.go-back-button:hover {
+     background-color: #8a5b30;
+     
+}
+
+.go-back-button a {
+     color: rgb(0, 0, 0);
+     list-style: none;
+     font-weight: bold;
+     text-align: center;
+}
+.info-container button,
+.info-container a {
+     border: 0;
+     padding: 10px;
+     font-size: 16px;
+     text-decoration: none;
+     display: inline-block;
+     margin-right: 30px;
+     border-radius: 10px;
+     color: white;
+     transition: background-color 0.3s ease;
+}
+
+.info-buttons a {
+     background-color: gray;
+}
+
+.deleteB {
+     background-color: rgb(230, 7, 7);
+}
+
+.Like {
+     background-color: rgb(23, 76, 250);
+}
+
+.info-buttons a:hover {
+     background-color: rgb(105, 104, 104);
+}
+
+.deleteB:hover {
+     background-color: rgb(204, 9, 9);
+}
+
+.Like:hover {
+     background-color: rgb(19, 64, 209);
+}
+
+.ingredient-info{
+     flex-wrap: wrap;
+     width: 100%;
+     margin-bottom: 20px;
+     
+}
+
+@media (max-width: 600px) {
+     .info2 {
+          display: flex;
+          flex-direction: column;
+     }
+
+     .info2 .info-image {
+          width: 230px;
+          margin: 0 auto;
+     }
+
+     .info2 .info-image img {
+          width: 230px;
+     }
+
+     .info2 .info-text {
+          text-align: center;
+          
+     }
+}
+
+/* ------------------------ Comments ----------------------------*/
+.comments{
+     background-color: #ffffff;
+     border: 1px solid #ddd;
+     border-radius: 10px;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+     width: 80%;
+     margin: 0 auto;
+     margin-top: 60px;
+}
+.comments h4{
+     margin: 6px auto;
+     text-align: center;
+     padding: 10px;
+     background-color: #a18a8a;
+     width: 150px;
+     border-radius: 10px;
+     font-weight: bold;
+     color: white;
+     text-shadow: 1px 1px black;
+}
+.add-comments{
+     background-color: #a18a8a;
+     width: 95%;
+     margin: 0 auto;
+     border-radius: 15px 15px 0 0;
+     font-size: 18px;
+}
+.add-comments .add-comment-title{
+     font-size: 18px;
+     padding: 8px;
+     color: white;
+     text-shadow: 1px 1px rgb(0, 0, 0);
+}
+.add-comments .add-commend-sub{
+    text-align: center; 
+}
+.add-comments .add-commend-sub textarea{
+     background-color: #dfdfdf;
+     min-height: 130px;
+     width: 99%;
+}
+.add-comments-b{
+     background-color: #a18a8a;
+     color: rgb(255, 255, 255);
+     text-shadow: 1px 1px black;
+     border: none;
+     margin: 23px;
+     padding: 10px;
+     border-radius: 14px;
+     
+}
+
+
+
+.comment{
+     background-color: #a18a8a;
+     width: 95%;
+     margin: 20px auto;
+     padding: 5px;
+     padding-bottom: 11px;
+     border-radius: 14px;
+}
+.commend-top{
+     padding: 5px;
+     color: white;
+     text-shadow: 1px 1px black;
+}
+.commend-buttom{
+     background-color: white;
+     min-height: 80px;
+     width: 99%;
+     margin: 0 auto;
+     border-radius: 10px;
+     
+}
+.delete-com{
+     border: 0;
+     padding: 10px;
+     font-size: 16px;
+     text-decoration: none;
+     display: inline-block;
+     margin-right: 30px;
+     border-radius: 10px;
+     color: white;
+     background-color:#2e2e2e;
+     transition: background-color 0.3s ease;
+     margin-left: 28px;
+}
+.delete-com:hover{
+     background-color: #555555;
+}
+/* ------------------------ CreateRecipe ------------------------*/
+.addRec {
+     background-color: #ffffff;
+     min-height: 100vh;
+}
+
+.CreateRecipe {
+     width: 550px;
+     margin: 30px auto;
+     text-align: center;
+     display: flex;
+     padding: 40px;
+     background: rgb(110, 66, 24);
+     background: linear-gradient(270deg, #B2753B 0%,#B2753B 5%, rgb(243, 186, 133) 50%, #B2753B 95%,  #B2753B 100%);
+     border: solid 2px black;
+     border-radius: 30px;
+     
+}
+
+.CreateRecipe input {
+     margin: 5px;
+     width: 350px;
+     height: 35px;
+     text-align: center;
+     margin: 5px auto;
+     border-radius: 10px;
+}
+
+.CreateRecipe select {
+     width: 350px;
+     height: 35px;
+     margin: 5px;
+     margin: 5px auto;
+     border-radius: 10px;
+}
+
+.CreateRecipe button {
+     width: 350px;
+     height: 35px;
+     margin: 5px;
+     margin: 5px auto;
+     border-radius: 10px;
+     transition: background-color 0.3s ease;
+}
+.CreateRecipe button:hover {
+     background-color: #ddd;
+}
+
+.CreateRecipe textarea {
+     width: 350px;
+     margin-top: 5px;
+     margin: 0 auto;
+     text-align: center;
+}
+.CreateRecipe option{
+     text-align: center;
+}
+
+.CreateRecipe .img-input {
+     margin: 0 auto;
+     margin-bottom: 5px;
+}
+
+@media (max-width: 600px) {
+     .CreateRecipe{
+          width: 300px;
+          padding: 20px;
+     }
+     .CreateRecipe input, .CreateRecipe textarea,.CreateRecipe button , .CreateRecipe select{
+          width: 240px;
+          
+     }
+     .CreateRecipe input, .CreateRecipe button , .CreateRecipe select{
+          height: 35px;
+     }
+     .CreateRecipe p{
+          font-size: 13px;
+     }
+     
+}
