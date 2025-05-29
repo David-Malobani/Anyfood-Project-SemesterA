@@ -77,4 +77,4 @@ User profile and saved recipes
 
 👨‍💻 Author
 
-David Malobani – GitHub Profile
+David Malobani – [GitHub Profile](https://github.com/David-Malobani)
