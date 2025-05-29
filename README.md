@@ -48,16 +48,6 @@ VITE_FIREBASE_APP_ID=your_app_id
 
 npm run dev
 
-📁 Folder Structure
-
-recipes/
-├── firebase.js # Firebase setup
-├── index.html # Entry HTML file
-├── package.json # Project config and dependencies
-├── .env # Environment variables (not committed)
-├── vite.config.js # Vite configuration
-└── ...
-
 🧪 Scripts
 
     npm run dev – Start development server
